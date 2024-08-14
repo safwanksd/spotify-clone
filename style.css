@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* --------- SIDE NAVBAR -------- */
+
+.side_nav {
+    width: 300px;
+    background: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 8px;
+}
+.nav_box{
+    background: #121212;
+    border-radius: 10px;
+    padding: 20px 10px 10px 10px;
+    margin-bottom: 8px;
+}
+.nav_box .logo_box{
+    width: 120px;
+    padding: 0px 0px 10px 12px ;
+}
+.nav_box .logo_box img{
+    width: auto;
+    height: 25px;
+}
+.nav_box ul{
+    list-style: none;
+}
+.nav_box ul li{
+    padding: 10px 15px 15px 15px;
+}
+.nav_box ul li a{
+    text-decoration: none;
+    color: #F0F0F0;
+    font-weight: 600;
+}
+
+.nav_box ul li a i{
+    padding: 0px 15px 0px 0px;
+    font-size: 1.3rem;
+}
+
+.library:after{
+    content: '+';
+    float: right;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 19px;
+}
+.playlist{
+    background: #1F1F1F; 
+    margin-bottom: 12px;
+    padding: 20px 15px;
+    border-radius: 20px;
+    
+}
+.library_scroll{
+    height: 80px;
+    overflow-y: auto;
+    scrollbar-width: thin; /* Makes the scrollbar thinner */
+    scrollbar-color: grey transparent;
+}
+
+.playlist h4{
+    color: white;
+    font-size: 15px;   
+    
+}
+.playlist p{
+    color: rgb(204, 198, 198);
+    font-size: 12px;   
+    margin: 10px 0;
+}
+.playlist button{
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 20px;
+    outline: 0;
+    border: 0;
+    margin-bottom: 0px;
+}
+.side_footer{
+    margin: 0px 5px;
+    background: #121212;
+    border-radius: 10px;
+    padding-bottom: 15px;
+}
+
+.side_footer ul li{
+    list-style: none;
+    padding: 5px 15px 5px 15px;
+}
+.side_footer ul li a{
+    text-decoration: none;
+    color: rgb(95, 93, 93);
+    font-size: 0.7rem;
+    padding-right:  12px;
+}
+.btn i{
+    padding-right: 5px;
+}
+.side_footer .btn{
+    background: black;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 20px;
+    outline: 0;
+    border: 1px solid grey;
+    margin: 10px 5px 10px 10px;
+
+}
+
+/* -------- MAIN SECTION TOP CSS---------------  */
+
+.main{
+    margin-left: 300px;
+    background: #181818;
+    height: 100vh;
+}
+.main .top_nav{
+    padding: 18px 30px;
+    background: #131212;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main .top_nav button{
+    background: transparent;
+    outline: 0;
+    border: 0;
+}
+.main .top_nav .nav_btn button i{
+    color: rgb(209, 206, 206);
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.top_nav .login_btn .signup{
+    color: rgb(145, 140, 140);
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 25px;
+}
+.top_nav .login_btn .login{
+    color: rgb(7, 7, 7);
+    font-size: 16px;
+    font-weight: bold;
+    background: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin-right: 15px;
+
+}
+
+/* -------- POPULAR ARTIST AND OTHER SECTIONS --------- */
+
+.artist {
+    padding: 20px 40px;
+    background: #181818;
+
+}
+.artist h2{
+    color: white;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.artist .card {
+    display: flex;
+    overflow: hidden;
+
+}
+.artist .card .item{
+    width: 240px;
+    min-width: 160px;
+    padding: 10px;
+    margin: 2px;
+    background-color: #1D1D1D;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.artist .card .item img{
+    width: 100%;
+    height: 140px;
+}
+
+.artist .card .item .img_round{
+    border-radius: 50%;
+}
+.artist .item h4{
+    color: white;
+}
+.artist .item p{
+    color: rgb(168, 164, 164);
+    font-size: 13px;
+    margin-top: 10px;
+}
+.artist .play_button {
+    position: relative;
+}
+.artist .play_button i{
+    font-size: 1.1rem;
+    position: absolute;
+    background-color: #3BE477;
+    padding: 14px;
+    border-radius: 50%;
+    right: 10px;
+    top: -50px;
+}
+
+/* -----------FOOTER SECTION CSS---------- */
+
+.footer{
+    padding: 20px 40px;
+    background: #181818;
+}
+.footer .footer_box{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer .footer_box .footer_links{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.footer .footer_box .footer_links .footer_col{
+    margin: 0 15px;
+
+}
+.footer .footer_box .footer_links div{
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 10px;
+    
+}
+.footer .footer_box .footer_links ul li{
+    list-style: none;
+    margin: 6px 0px;
+}
+.footer .footer_box .footer_links ul li a{
+    text-decoration: none;
+    color: rgb(139, 135, 139);
+    font-size: 13px;
+}
+.footer_box .social i{
+    color: white;
+    background: #2e2e2e;
+    padding: 12px;
+    border-radius: 50%;
+    margin: 2px;
+}
+hr{
+    margin: 20px 40px 10px 40px;
+    border: 0;
+    outline: 0;
+    border: 1px solid grey;
+}
+.footnote{
+    color: #757474;
+    margin: 20px;
+    padding: 0px 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
